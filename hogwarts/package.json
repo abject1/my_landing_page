@@ -1,0 +1,24 @@
+{
+  "name": "hogward",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w src/scss -o public/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abject1/hogward.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abject1/hogward/issues"
+  },
+  "homepage": "https://github.com/abject1/hogward#readme",
+  "dependencies": {
+    "node-sass": "^7.0.3",
+    "sass": "^1.55.0"
+  }
+}

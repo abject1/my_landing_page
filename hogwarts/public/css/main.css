@@ -1,0 +1,417 @@
+/* ----------------- */
+/* ----- RESET ----- */
+/* ----------------- */
+* {
+  margin: 0;
+  padding: 0; }
+
+ul,
+ol {
+  list-style: none; }
+
+a {
+  color: unset;
+  text-decoration: none; }
+
+/* ------------------ */
+:root {
+  /* -------------------- */
+  /* ---- VARIABLES ----- */
+  /* -------------------- */
+  /* ----- Generale ----- */
+  --white: #fff;
+  --black: #000;
+  --yellow: #f1c40f;
+  --active-page-color: #3498db;
+  --not-active-page-color: #34495e;
+  --font: 'Roboto', sans-serif, serif, arial;
+  /* ---------------- */
+  /* ----- Background ----- */
+  --background-header: #2980b9;
+  --background-footer: #2c3e50;
+  --background-container: #bdc3c7;
+  --background-nav: #34495e;
+  /* ------------------------- */
+  /* ----- Button color ----- */
+  --btn-color-primary: #ecf0f1;
+  --btn-color-secondary: #bdc3c7;
+  --btn-color-danger: #c0392b;
+  /* ----------------------------- */
+  /* ----- Border ----- */
+  --border-primary: #8e44ad;
+  --border-secondary: #392741;
+  --border-grey: #2c3e50;
+  /* ----------------------- */
+  /* ----- Grey ----- */
+  --grey-50: rgb(116, 110, 110);
+  --grey-100: rgb(102, 97, 97);
+  --grey-200: rgb(80, 76, 76);
+  --grey-300: rgb(70, 67, 67);
+  --grey-400: rgb(48, 46, 46);
+  --grey-500: rgb(36, 34, 34); }
+
+/* ---------------------------------------- */
+/* ----------------------- */
+/* ----- HTML & BODY ----- */
+/* ----------------------- */
+html,
+body {
+  font-size: 10px;
+  font-family: var(--font);
+  color: white;
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-container); }
+
+/* ------------------------- */
+/* ----------------------- */
+/* ---- GENERAL CLASS ---- */
+/* ----------------------- */
+.m-5 {
+  margin: 0.5rem; }
+
+.m-10 {
+  margin: 1rem; }
+
+.m-15 {
+  margin: 1.5rem; }
+
+.m-20 {
+  margin: 2rem; }
+
+.m-30 {
+  margin: 3rem; }
+
+.m-40 {
+  margin: 4rem; }
+
+.m-vertical-5 {
+  margin: 0.5rem auto; }
+
+.m-vertical-10 {
+  margin: 1rem auto; }
+
+.m-vertical-20 {
+  margin: 2rem auto; }
+
+.m-horizontal-5 {
+  margin: auto 0.5rem; }
+
+.m-horizontal-10 {
+  margin: auto 1rem; }
+
+.m-horizontal-20 {
+  margin: auto 2rem; }
+
+.p-5 {
+  padding: 0.5rem; }
+
+.p-10 {
+  padding: 1rem; }
+
+.p-15 {
+  padding: 1.5rem; }
+
+.p-20 {
+  padding: 2rem; }
+
+.p-30 {
+  padding: 3rem; }
+
+.p-40 {
+  padding: 4rem; }
+
+.p-vertical-5 {
+  padding: 0.5rem auto; }
+
+.p-vertical-10 {
+  padding: 1rem auto; }
+
+.p-vertical-20 {
+  padding: 2rem auto; }
+
+.p-horizontal-5 {
+  padding: auto 0.5rem; }
+
+.p-horizontal-10 {
+  padding: auto 1rem; }
+
+.p-horizontal-20 {
+  padding: auto 2rem; }
+
+.overflow {
+  overflow: hidden; }
+
+.active {
+  border: 0.2rem solid var(--border-primary);
+  border-radius: 0.5rem;
+  background-color: var(--active-page-color); }
+
+.notSeen {
+  display: none !important; }
+
+/* ----------------------------------------------- */
+/* ------------------ */
+/* ----- HEADER ----- */
+/* ------------------ */
+header {
+  background-color: var(--background-header); }
+  header h1 {
+    text-align: center;
+    border: 0.2rem solid var(--border-primary);
+    border-radius: 0.5rem; }
+  header .upNav {
+    display: grid;
+    grid-template-areas: 'title menuBurger' 'img img';
+    grid-template-columns: 1fr 2.5rem; }
+    header .upNav h3 {
+      color: var(--yellow);
+      grid-area: title;
+      display: flex;
+      justify-content: center;
+      text-align: center; }
+    header .upNav img {
+      width: 25%;
+      grid-area: img;
+      margin: 0.4rem auto; }
+    header .upNav .menuBurger {
+      margin: auto;
+      grid-area: menuBurger;
+      height: 0.2rem;
+      width: 1.5rem; }
+      header .upNav .menuBurger span {
+        display: block;
+        margin: 0.1rem;
+        min-height: 0.2rem;
+        max-width: 1.5rem;
+        background-color: black; }
+  header nav {
+    display: none; }
+    header nav ul {
+      display: flex;
+      justify-content: center;
+      width: 90vw; }
+      header nav ul li {
+        margin: auto;
+        padding-bottom: 0.2rem;
+        padding: 0.4rem; }
+  header .navSeen {
+    display: block;
+    text-align: center;
+    transition: 5s;
+    position: fixed;
+    margin-top: 1rem;
+    margin-left: 0.6rem;
+    z-index: 2;
+    background-color: var(--background-nav); }
+  header .spanNotSeen {
+    display: none !important; }
+  header .spanRotateUn {
+    rotate: 45deg;
+    transform: translateY(0.2rem);
+    transform: translateX(0.2rem); }
+  header .spanRotateDeux {
+    rotate: 135deg;
+    transform: translateY(-0.2rem);
+    transform: translateX(-0.2rem); }
+
+/* -------------------------------------- */
+/* ---------------- */
+/* ----- MAIN ----- */
+/* ---------------- */
+main h2 {
+  text-align: center;
+  text-decoration: underline; }
+
+main section {
+  margin: 0.8rem;
+  padding: 0.4rem;
+  border: 0.2rem solid var(--border-primary);
+  border-radius: 0.8rem; }
+
+main #houseDifferente {
+  background-color: var(--grey-100); }
+  main #houseDifferente ul {
+    display: flex;
+    justify-content: space-around; }
+    main #houseDifferente ul li {
+      margin: 0.6rem auto;
+      font-size: 1.2rem; }
+  main #houseDifferente .hufGry {
+    margin-right: 5.5rem; }
+    main #houseDifferente .hufGry :first-child {
+      color: #c0c002; }
+    main #houseDifferente .hufGry :last-child {
+      color: #971b1b; }
+  main #houseDifferente .slyRav {
+    margin-left: 6rem; }
+    main #houseDifferente .slyRav :first-child {
+      color: #0a4b0a; }
+    main #houseDifferente .slyRav :last-child {
+      color: #15159b; }
+  main #houseDifferente img {
+    width: 80%;
+    display: block;
+    margin: auto; }
+
+main #personnageDifferente {
+  background-color: var(--grey-300); }
+  main #personnageDifferente .card {
+    border: 0.2rem solid var(--border-secondary);
+    border-radius: 0.5rem;
+    margin: 1rem; }
+    main #personnageDifferente .card h2 {
+      margin: 0.6rem auto; }
+    main #personnageDifferente .card img {
+      width: 20%;
+      display: block;
+      margin: 0.8rem auto;
+      border-radius: 50%; }
+    main #personnageDifferente .card h3, main #personnageDifferente .card h4, main #personnageDifferente .card h5 {
+      text-align: center;
+      margin: 0.2rem auto; }
+    main #personnageDifferente .card .dateNaissance {
+      font-size: 0.8rem; }
+    main #personnageDifferente .card ul {
+      display: flex;
+      justify-content: center; }
+      main #personnageDifferente .card ul li {
+        margin: auto 0.4rem; }
+    main #personnageDifferente .card .descPhys {
+      border: 0.2rem solid var(--border-primary);
+      border-radius: 0.5rem;
+      margin: 0.8rem 7rem;
+      padding: 0.4rem; }
+    main #personnageDifferente .card .wand {
+      border: 0.2rem solid var(--border-secondary);
+      margin: 0.8rem 7rem;
+      padding: 0.4rem; }
+
+main #spellsDifferente {
+  background-color: var(--grey-100); }
+  main #spellsDifferente .spells {
+    border: 0.2rem solid var(--border-primary);
+    border-radius: 0.5rem;
+    margin: 1rem 6rem;
+    padding: 1rem; }
+    main #spellsDifferente .spells h4 {
+      text-align: center;
+      margin-bottom: 0.4rem;
+      text-transform: uppercase;
+      color: #c0392b;
+      text-decoration: underline; }
+    main #spellsDifferente .spells p {
+      text-align: center; }
+
+/* --------------------------------------- */
+/* ------------------ */
+/* ----- FOOTER ----- */
+/* ------------------ */
+footer {
+  background-color: var(--background-footer); }
+  footer ul {
+    display: flex;
+    justify-content: center;
+    padding: 0.6rem; }
+    footer ul li {
+      margin: auto 0.6rem; }
+  footer h3 {
+    text-align: center;
+    padding: 0.8rem; }
+  footer h4 {
+    text-align: center;
+    padding: 0.8rem; }
+  footer i {
+    font-size: 2rem; }
+
+/* --------------------------------------- */
+/* ---------------------- */
+/* ----- RESPONSIVE ----- */
+/* ---------------------- */
+@media (min-width: 426px) {
+  header h1 {
+    margin: auto 20rem !important;
+    font-size: 2.6rem; }
+  header .upNav {
+    grid-template-columns: 1fr 20rem; }
+    header .upNav h3 {
+      font-size: 1.4rem;
+      justify-content: flex-end;
+      margin-right: 5rem; }
+    header .upNav img {
+      width: 15%; }
+  header nav {
+    margin-left: 3rem !important; }
+    header nav ul li a {
+      font-size: 1.2rem; }
+  #houseDifferente h2 {
+    font-size: 2rem; }
+  #houseDifferente ul li {
+    font-size: 2rem !important; }
+  #houseDifferente .hufGry {
+    margin-right: 15rem !important; }
+  #houseDifferente .slyRav {
+    margin-left: 15rem !important; }
+  #personnageDifferente {
+    display: grid;
+    grid-template-areas: "h2 h2"; }
+    #personnageDifferente h2 {
+      font-size: 2.4rem;
+      grid-area: h2; }
+  #spellsDifferente {
+    display: grid;
+    grid-template-areas: "h2 h2 h2"; }
+    #spellsDifferente h2 {
+      font-size: 2.4rem;
+      grid-area: h2; }
+    #spellsDifferente .spells {
+      margin: 1rem 2rem !important; } }
+
+@media (min-width: 769px) {
+  header .upNav h3 {
+    margin-right: 17rem !important; }
+  #houseDifferente h2 {
+    margin-bottom: 1.6rem; }
+  #houseDifferente .hufGry {
+    margin-right: 19rem !important; }
+  #houseDifferente .slyRav {
+    margin-left: 19rem !important; }
+  #personnageDifferente {
+    grid-template-areas: "h2 h2 h2"; }
+  #spellsDifferente {
+    grid-template-areas: "h2 h2 h2 h2 h2"; } }
+
+@media (min-width: 1025px) {
+  header h1 {
+    margin: auto 45rem !important; }
+  header .upNav h3 {
+    margin-right: 38rem !important; } }
+
+@media (min-width: 1441px) {
+  header h1 {
+    margin: auto 100rem !important; }
+  header .upNav h3 {
+    margin-right: 94rem !important; }
+  header .upNav img {
+    width: 5%; }
+  #houseDifferente ul {
+    justify-content: unset !important; }
+    #houseDifferente ul li {
+      font-size: 2.8rem !important;
+      margin: auto 5rem !important; }
+  #houseDifferente img {
+    width: 50% !important; }
+  #houseDifferente .hufGry {
+    margin-left: 67rem !important; }
+    #houseDifferente .hufGry :last-child {
+      margin-left: 45rem !important; }
+  #houseDifferente .slyRav {
+    margin-left: 100rem !important; }
+    #houseDifferente .slyRav :last-child {
+      margin-left: 46rem !important; }
+  #personnageDifferente {
+    grid-template-areas: "h2 h2 h2 h2 h2"; }
+  #spellsDifferente {
+    grid-template-areas: "h2 h2 h2 h2 h2 h2 h2"; } }
+
+/* --------------------------------------- */

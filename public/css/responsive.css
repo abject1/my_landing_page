@@ -1,0 +1,21 @@
+@media (min-width: 321px) {
+  body header .cardHeader {
+    margin: 1rem 1.2rem; }
+    body header .cardHeader img {
+      width: 15%;
+      margin-left: 0.6rem; } }
+
+@media (min-width: 769px) {
+  body header .cardHeader {
+    margin: 1.2rem 1.8rem;
+    padding: 0.8rem 0.4rem;
+    justify-content: space-around; }
+    body header .cardHeader h3 {
+      padding: 1rem; }
+    body header .cardHeader img {
+      width: 8%;
+      margin: 1.2rem 0.8rem; } }
+
+@media (min-width: 1025px) {
+  body header .cardHeader img {
+    width: 6%; } }

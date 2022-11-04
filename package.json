@@ -1,0 +1,30 @@
+{
+  "name": "my_landing_page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w src/scss -o public/css",
+    "babel": "babel src/js --out-dir public/js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abject1/my_landing_page.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abject1/my_landing_page/issues"
+  },
+  "homepage": "https://github.com/abject1/my_landing_page#readme",
+  "dependencies": {
+    "@babel/cli": "^7.19.3",
+    "@babel/core": "^7.19.6",
+    "@babel/preset-env": "^7.19.4",
+    "babel-loader": "^9.1.0",
+    "node-sass": "^7.0.3",
+    "sass": "^1.55.0",
+    "sass-loader": "^13.1.0"
+  }
+}

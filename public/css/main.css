@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 100%; }
+
+.underline {
+  display: block;
+  margin: auto;
+  width: 80vw;
+  height: 0.2rem;
+  background-color: black; }
+
+body {
+  min-height: 100vh; }
+  body a {
+    color: unset;
+    text-decoration: none; }
+  body header {
+    background-color: #2980b9;
+    padding: 0.2rem 0.2rem 1.6rem 0; }
+    body header h1 {
+      text-align: center;
+      text-decoration: underline;
+      color: #912d2d;
+      margin: 0.4rem auto; }
+    body header .cardHeader {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: auto 0.8rem;
+      border: 0.2rem solid black;
+      box-shadow: 0.6rem 1rem 0.8rem black;
+      padding: 1.8rem 0.8rem; }
+      body header .cardHeader h3 {
+        text-align: center;
+        margin: auto 1rem; }
+      body header .cardHeader img {
+        width: 40%;
+        border-radius: 50%;
+        border: 0.1rem solid #c5c538;
+        box-shadow: 0.2rem 0.8rem 0.7rem #c5c538, -0.3rem -0.4rem 0.7rem #c5c538; }
+  body main article {
+    border: 0.2rem solid black;
+    border-radius: 0.5rem;
+    margin: 2rem; }
+    body main article h2 {
+      text-align: center;
+      text-decoration: underline;
+      font-size: 2.4rem;
+      color: blue;
+      margin: 0.6rem auto; }
+    body main article img {
+      display: block;
+      margin: 0.8rem auto;
+      width: 30%;
+      border-radius: 0.5rem;
+      background-color: white;
+      min-width: 25   0px;
+      min-height: 225px; }
+    body main article p {
+      text-align: center;
+      margin: 1.4rem 5rem; }
+    body main article .stack {
+      color: red;
+      font-size: 1.6rem; }
+    body main article a {
+      color: orangered;
+      border: 0.2rem solid black;
+      background-color: white;
+      border-radius: 0.5rem;
+      display: block;
+      text-align: center;
+      max-width: 120px;
+      margin: 1.5rem auto;
+      padding: 0.2rem; }
+      body main article a:hover {
+        font-size: 1.2rem;
+        padding: 0.6rem;
+        border: 0.2rem solid white;
+        background-color: black;
+        color: #963918;
+        animation-delay: all 0.6s; }
+  body footer {
+    background-color: #3498db;
+    padding: 0.4rem; }
+    body footer h4 {
+      text-align: center; }
+    body footer .reseaux {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 1rem 0.6rem 0 0.6rem; }
+      body footer .reseaux i:hover {
+        font-size: 1.8rem;
+        cursor: pointer; }
+      body footer .reseaux #linkedin:hover {
+        color: #0A66C2;
+        background-color: white; }
+      body footer .reseaux #twitter:hover {
+        color: #1DA1F3;
+        background-color: white; }
+      body footer .reseaux #mail:hover {
+        color: red;
+        background-color: white; }
+      body footer .reseaux #phone:hover {
+        color: green;
+        background-color: white; }

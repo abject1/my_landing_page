@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+}
+
+.underline {
+    display: block;
+    margin: auto;
+    width: 80vw;
+    height: 0.2rem;
+    background-color: black;
+}
+
+body{
+    a {
+        color: unset;
+        text-decoration: none;
+    }
+    min-height: 100vh;
+    header{
+        background-color: #2980b9;
+        padding: 0.2rem 0.2rem 1.6rem 0;
+        h1 {
+            text-align: center;
+            text-decoration: underline;
+            color: rgb(145, 45, 45);
+            margin: 0.4rem auto;
+        }
+        .cardHeader {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto 0.8rem;
+            border: 0.2rem solid black;
+            box-shadow: 0.6rem 1rem 0.8rem black;
+            padding: 1.8rem 0.8rem;
+            h3{
+                text-align: center;
+                margin: auto 1rem;
+            }
+            img {
+                width: 40%;
+                border-radius: 50%;
+                border: 0.1rem solid rgb(197, 197, 56);
+                box-shadow: 0.2rem 0.8rem 0.7rem rgb(197, 197, 56), -0.3rem -0.4rem 0.7rem rgb(197, 197, 56);
+            }
+        }
+
+    }
+
+    main {
+        article {
+            border: 0.2rem solid black;
+            border-radius: 0.5rem;
+            margin: 2rem;
+            h2 {
+                text-align: center;
+                text-decoration: underline;
+                font-size: 2.4rem;
+                color: blue;
+                margin: 0.6rem auto;
+            }
+            img {
+                display: block;
+                margin: 0.8rem auto;
+                width: 30%;
+                border-radius: 0.5rem;
+                background-color: white;
+                min-width: 25   0px;
+                min-height: 225px;
+            }
+            p {
+                text-align: center;
+                margin: 1.4rem 5rem;
+            }
+            .stack {
+                color: red;
+                font-size: 1.6rem;
+            }
+            a {
+                color: orangered;
+                border: 0.2rem solid black;
+                background-color: white;
+                border-radius: 0.5rem;
+                display: block;
+                text-align: center;
+                max-width: 120px;
+                margin: 1.5rem auto;
+                padding: 0.2rem;
+                &:hover {
+                    font-size: 1.2rem;
+                    padding: 0.6rem;
+                    border: 0.2rem solid white;
+                    background-color: black;
+                    color: rgb(150, 57, 24);
+                    animation-delay: all 0.6s;
+                }
+            }
+        }
+    }
+
+    footer {
+        background-color: #3498db;
+        padding: 0.4rem;
+        h4 {
+            text-align: center;
+        }
+        .reseaux {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 1rem 0.6rem 0 0.6rem;
+            i {
+                &:hover {
+                    font-size: 1.8rem;
+                    cursor: pointer;
+                }
+            }
+            #linkedin {
+                &:hover {
+                    color: #0A66C2;
+                    background-color: white;
+                }
+            }
+            #twitter {
+                &:hover {
+                    color: #1DA1F3;
+                    background-color: white;
+                }
+            }
+            #mail {
+                &:hover {
+                    color: red;
+                    background-color: white;
+                }
+            }
+            #phone {
+                &:hover {
+                    color: green;
+                    background-color: white;
+                }
+            }
+        }
+    }
+}
